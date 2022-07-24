@@ -7,6 +7,8 @@ import { MenuComponent } from './shared/menu/menu.component';
 import { HomeComponent } from './home/home.component';
 import { VehiculosComponent } from './vehiculos/vehiculos.component';
 
+import {HttpClientModule} from '@angular/common/http'
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,7 +18,8 @@ import { VehiculosComponent } from './vehiculos/vehiculos.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
